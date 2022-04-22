@@ -12,7 +12,7 @@ Our dataset includes reviews of furniture. We used PySpark to perform the ETL pr
 
 ## Analysis and Results
 ### Analysis - Section 1
-Using the cloud ETL process, created an AWS RDS database with tables in pgAdmin, selected a dataset of furniture reviews from the Amazon Review datasets ([Furniture Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Furniture_v1_00.tsv.gz)), and extracted the dataset into a DataFrame. Then the DataFrame was transformed into four separate DataFrames that match the table schema in pgAdmin. Then the transformed data was uploaded into the appropriate tables. All steps are listed below:<br/>
+Using the cloud ETL process, I created an AWS RDS database with tables in pgAdmin, selected a dataset of furniture reviews from the Amazon Review datasets ([Furniture Dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Furniture_v1_00.tsv.gz)), and extracted the dataset into a DataFrame. Then the DataFrame was transformed into four separate DataFrames that match the table schema in pgAdmin. Then the transformed data was uploaded into the appropriate tables. All steps are listed below:<br/>
 1. Create a new database with Amazon RDS.
 2. In pgAdmin, create a new database in the Amazon RDS server
 3. In pgAdmin, run a new query to create the tables for our new database. Now four new tables are created: customers_table, products_table, review_id_table, and vine_table
@@ -41,7 +41,7 @@ Using the cloud ETL process, created an AWS RDS database with tables in pgAdmin,
 17. 'Amazon_Reviews_ETL' Google Colab Notebook was exported as an ipynb file, and available for review here: [Amazon_Reviews_ETL.ipynb](https://github.com/rmat112/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
 
 ### Analysis - Section 2
-In this section we worked on determining if there is bias towards reviews that were written as part of the Vine program. This task was completed by using PySpark.
+In this section I worked on determining if there is bias towards reviews that were written as part of the Vine program. This task was completed by using PySpark.
 1. A Google Colab notebook called Vine_Review_Analysis was created and used to extract the furniture dataset
 2. Vine_table (from section 1) was recreated
 3. The data in Vine_table is filtered to create a DataFrame where there are 20 or more total votes
