@@ -1,5 +1,5 @@
 # Amazon_Vine_Analysis
-Project on Big Data. Performing ETL on Amazon product reviews and determine bias.
+This is a project on Big Data. This involves performing ETL (extract-transform-load) on Amazon product reviews and determine bias.
 
 ## Overview of the Analysis
 This challenge includes analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
